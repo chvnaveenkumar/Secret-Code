@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Secret Code/Secret Code.iml" filepath="$PROJECT_DIR$/Secret Code/Secret Code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Secret Code Android.iml" filepath="$PROJECT_DIR$/Secret Code Android.iml" />
+      <module fileurl="file://C:\Users\S530742\AndroidStudioProjects\Secret Code Android\Secret Code\app.iml" filepath="C:\Users\S530742\AndroidStudioProjects\Secret Code Android\Secret Code\app.iml" />
+    </modules>
+  </component>
+</project>

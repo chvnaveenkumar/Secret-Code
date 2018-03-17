@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.s530742.chandaluri_program05.MainActivity">
+
+
+    <ListView
+        android:id="@+id/symbol"
+        android:layout_width="330dp"
+        android:layout_height="268dp"
+        android:layout_marginBottom="235dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:background="@android:color/holo_blue_light"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@id/textView2"
+        android:layout_marginBottom="150dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="The Guess is:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guess"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symbol"
+        app:layout_constraintVertical_bias="0.0"
+        tools:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/guess"
+        android:layout_width="167dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/attempts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/undo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="26dp"
+        android:onClick="undo"
+        android:text="Undo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/retry"
+        app:layout_constraintTop_toBottomOf="@+id/guessed" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="21dp"
+        android:text="Attempts :"
+        app:layout_constraintBottom_toTopOf="@+id/reset"
+        app:layout_constraintEnd_toStartOf="@+id/attempts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/attempts"
+        android:layout_width="29dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/retry"
+        app:layout_constraintEnd_toStartOf="@+id/textView6"
+        app:layout_constraintStart_toEndOf="@+id/text"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0"
+        tools:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/guessed"
+        android:layout_width="21dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintBottom_toTopOf="@+id/undo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/symbol"
+        tools:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="21dp"
+        android:text="Symbols Guessed"
+        app:layout_constraintBottom_toTopOf="@+id/undo"
+        app:layout_constraintEnd_toStartOf="@+id/guessed"
+        app:layout_constraintStart_toEndOf="@+id/attempts"
+        app:layout_constraintTop_toBottomOf="@+id/guess"
+        tools:textSize="18sp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="33dp"
+        android:onClick="reset"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/undo"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="18dp"
+        android:text="Secret Code Length :"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/symbol"
+        tools:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginBottom="198dp"
+        android:layout_marginEnd="191dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="294dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="28dp"
+        android:onClick="retry"
+        android:text="Retry"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/undo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/reset"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="1.0" />
+</android.support.constraint.ConstraintLayout>
